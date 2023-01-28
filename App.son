@@ -1,0 +1,30 @@
+{
+  "name": "SAKURA-BOTV6",
+  "description": "SAKURA-BOTV6",
+  "repository": "https://github.com/MagoInterior/aluguel-6",
+  "logo": "https://i.pinimg.com/564x/9e/82/43/9e8243be358412fb8f44b2725314dbc8.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+            "url": "https://github.com/yespark/heroku-imagemagick-buildpack"
+        },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    },
+    {
+      "url": "https://github.com/pathwaysmedical/heroku-buildpack-tesseract"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
